@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-left"> View Movie Details </h3>
+            <hr />
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label> Movie Name</label>
+                        {{movie.name}}
+                    </div>
+                    <div class="form-group">
+                        <label> Details</label>
+                        {{movie.details}}
+                    </div>
+                    <div class="form-group">
+                        <label> Genre</label>
+                        {{movie.genre}}
+                    </div>
+                    <div class="form-group">
+                        <label> Actors</label>
+                        {{movie.actors}}
+                    </div>
+                    <div class="form-group">
+                        <label> Release Date</label>
+                        {{movie.release_date}}
+                    </div>
+                    <div class="form-group">
+                        <label> Language</label>
+                        {{movie.language}}
+                    </div>
+                    <div>
+                        <button class="btn btn-default p-3 m-3" type="button" (click)="goToMovieList()">Back</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
